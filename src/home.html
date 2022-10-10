@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="bg-gray-200">
+    <p class="text-3xl font-semibold text-center mt-10">Your Account Details</p>
+    <section class="grid grid-cols-3 bg-blue-600 text-white mx-10 my-5 p-10 rounded-md">
+        <div class="p-10 m-10 font-semibold bg-green-600 rounded-md">
+            <p class="text-2xl">Deposit</p>
+            <p class="text-4xl">$<span id="total-deposit">0.00</span></p>
+        </div>
+        <div class="p-10 m-10 font-semibold bg-red-600 rounded-md">
+            <p class="text-2xl">Withdraw</p>
+            <p class="text-4xl">$<span id="total-withdraw">0.00</span></p>
+        </div>
+        <div class="p-10 m-10 font-semibold bg-orange-600 rounded-md">
+            <p class="text-2xl">Total Amount</p>
+            <p class="text-4xl">$<span id="total-amount">0.00</span></p>
+        </div>
+    </section>
+
+    <section class="grid grid-cols-2 bg-blue-600 text-white mx-10 my-5 p-10 rounded-md">
+        <div class="mx-auto">
+            <p class="text-lg font-semibold mb-2">Deposit Amount</p>
+            <div>
+                <input class="block rounded-md p-2 text-black bg-sky-100 focus:outline-0 focus:ring-1 focus:bg-white mb-2" id="current-deposit" type="number" name="" placeholder="Enter Amount">
+                <button class="bg-green-500 px-6 py-1.5 rounded-lg font-semibold hover:bg-green-600" id="deposit-btn">Deposit</button>
+            </div>
+        </div>
+        <div class="mx-auto">
+            <p class="text-lg font-semibold mb-2">Withdraw Amount</p>
+            <div>
+                <input class="block rounded-md p-2 text-black bg-sky-100 focus:outline-0 focus:ring-1 focus:bg-white mb-2" id="current-withdraw" type="number" name="" placeholder="Enter Amount">
+                <button class="bg-red-500 px-6 py-1.5 rounded-lg font-semibold hover:bg-red-600" id="withdraw-btn">Withdraw</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
